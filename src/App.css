@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body, section, #root{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: url('./images/loginBackground.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #330a6a;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.App .navnavbar{
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar{
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.Control-Buttons{
+  display: none;
+}
+
+.sidebar:hover{
+  width: 300px;
+}
+
+.sidebar:hover .Control-Buttons{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar:hover .timer{
+  flex-direction: row;
+}
+
+.sidebar:hover .watch{
+  height: max-content;
+  margin-bottom: 30px;
+}
+
+.sidebar ul{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar ul button{
+  width: 100%;
+}
+
+.sidebar ul .navlink{
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar ul .navlink a:hover{
+  background: #f3f3f3;
+}
+
+.sidebar ul .navlink.logo a:hover{
+  background: #fff;
+}
+
+.sidebar ul button:hover{
+  background: #f3f3f3;
+  cursor: pointer;
+}
+
+.sidebar ul .navlink a{
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.sidebar ul .navlink a .icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.sidebar ul .navlink a .text{
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sidebar ul .navlink a .time{
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #333;
+}
+
+.watch{
+  height: 160px;
+}
+
+.sidebar ul button{
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidebar ul button a .icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  font-size: 1.7em;
+  color: #333;
+}
+
+.sidebar ul button a .text{
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar ul .navlink.logo{
+  margin-bottom: 50px;
+}
+
+.sidebar ul .navlink.logo .icon{
+  font-size: 2em;
+}
+
+.sidebar ul .navlink.logo .text{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.bottom{
+  margin-top: auto;
+  width: 100%;
+}
+
+.bottom .profilelog .imgBx{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bottom .profilelog .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper__inner{
+  width: 1800px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.createStage, .createDeal{
+  height: max-content;
+}
+
+/* Settings */
+
+.p-component .p-tabview-panels{
+  height: 100%;
+}
+
+.p-fileupload-content div:last-child{
+  display: flex;
+  align-items: center;
+}
+
+.p-fileupload-content div:last-child span{
+  display: flex;
+  margin-left: 20px;
+}
+
+.p-tabview-panel{
+  height: 100% !important;
+}

@@ -1,0 +1,55 @@
+.dragAndDropFile{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dragAndDropFile button{
+    margin-left: 20px;
+    height: max-content;
+}
+
+.drop-container {
+    width: 700px;
+    height: 100%;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drop-containerAva{
+    width: auto;
+    height: 100%;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.drop-containerAva img{
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.drop-container.dragging {
+    border-color: #aaa;
+    background-color: #f0f0f0;
+}
+
+.drop-container p {
+    margin: 0;
+}

@@ -1,0 +1,13 @@
+.wrapper{
+    width: 100%;
+    padding: 50px 0 100px;
+    height: 100%;
+}
+
+.wrapper__inner{
+    width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
